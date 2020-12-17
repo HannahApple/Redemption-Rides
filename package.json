@@ -8,7 +8,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "docker build -t apple/redemption-rides .",
+    "start-docker": "docker run -p 80:3000 -d apple/redemption-rides"
   },
   "author": "Hannah Applebaum",
   "license": "ISC"
